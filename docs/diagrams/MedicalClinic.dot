@@ -1,0 +1,21 @@
+// Diagram for MedicalClinic
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		MedicalBusiness [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">MedicalBusiness</TD></TR></TABLE>> URL="../MedicalBusiness" margin=0]
+		MedicalOrganization [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">MedicalOrganization</TD></TR></TABLE>> URL="../MedicalOrganization" margin=0]
+	}
+	MedicalClinic [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">MedicalClinic</TD></TR></TABLE>> URL="../MedicalClinic" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	MedicalClinic -> MedicalBusiness [arrowhead=onormal style=solid]
+	MedicalClinic -> MedicalOrganization [arrowhead=onormal style=solid]
+}

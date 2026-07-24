@@ -1,0 +1,9 @@
+# legislationPassedBy
+
+The person or organization that originally passed or made the law: typically parliament (for primary legislation) or government (for secondary legislation). This indicates the "legal author" of the law, as opposed to its physical author.
+
+**Domain**: [Legislation](../classes/Legislation.md)
+
+**Range**: [Organization](../classes/Organization.md), [Person](../classes/Person.md)
+
+**IRI**: `http://schema.org/legislationPassedBy`

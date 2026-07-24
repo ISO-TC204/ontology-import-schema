@@ -1,0 +1,9 @@
+# recognizedBy
+
+An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation.
+
+**Domain**: [EducationalOccupationalCredential](../classes/EducationalOccupationalCredential.md)
+
+**Range**: [Organization](../classes/Organization.md)
+
+**IRI**: `http://schema.org/recognizedBy`

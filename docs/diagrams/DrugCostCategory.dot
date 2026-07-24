@@ -1,0 +1,19 @@
+// Diagram for DrugCostCategory
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		MedicalEnumeration [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">MedicalEnumeration</TD></TR></TABLE>> URL="../MedicalEnumeration" margin=0]
+	}
+	DrugCostCategory [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">DrugCostCategory</TD></TR></TABLE>> URL="../DrugCostCategory" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	DrugCostCategory -> MedicalEnumeration [arrowhead=onormal style=solid]
+}

@@ -1,0 +1,19 @@
+// Diagram for MotorcycleRepair
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		AutomotiveBusiness [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">AutomotiveBusiness</TD></TR></TABLE>> URL="../AutomotiveBusiness" margin=0]
+	}
+	MotorcycleRepair [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">MotorcycleRepair</TD></TR></TABLE>> URL="../MotorcycleRepair" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	MotorcycleRepair -> AutomotiveBusiness [arrowhead=onormal style=solid]
+}

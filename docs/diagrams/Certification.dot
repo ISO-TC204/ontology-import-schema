@@ -1,0 +1,21 @@
+// Diagram for Certification
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		CreativeWork [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">CreativeWork</TD></TR></TABLE>> URL="../CreativeWork" margin=0]
+		"fibo-fnd-doc_Certificate" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">fibo-fnd-doc:Certificate</TD></TR></TABLE>> URL="https://w3id.org/citydata/imported/fibo-fnd-doc/latest/Certificate" margin=0]
+	}
+	Certification [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Certification</TD></TR></TABLE>> URL="../Certification" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	Certification -> CreativeWork [arrowhead=onormal style=solid]
+	Certification -> "fibo-fnd-doc_Certificate" [arrowhead=onormal style=solid]
+}

@@ -1,0 +1,9 @@
+# customerRemorseReturnFees
+
+The type of return fees if the product is returned due to customer remorse.
+
+**Domain**: [MerchantReturnPolicy](../classes/MerchantReturnPolicy.md)
+
+**Range**: [ReturnFeesEnumeration](../classes/ReturnFeesEnumeration.md)
+
+**IRI**: `http://schema.org/customerRemorseReturnFees`

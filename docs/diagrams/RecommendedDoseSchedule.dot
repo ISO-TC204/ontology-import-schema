@@ -1,0 +1,19 @@
+// Diagram for RecommendedDoseSchedule
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		DoseSchedule [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">DoseSchedule</TD></TR></TABLE>> URL="../DoseSchedule" margin=0]
+	}
+	RecommendedDoseSchedule [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">RecommendedDoseSchedule</TD></TR></TABLE>> URL="../RecommendedDoseSchedule" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	RecommendedDoseSchedule -> DoseSchedule [arrowhead=onormal style=solid]
+}

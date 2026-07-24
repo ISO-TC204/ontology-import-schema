@@ -1,0 +1,21 @@
+// Diagram for WarrantyPromise
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		"fibo-fnd-agr_MutualContractualAgreement" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">fibo-fnd-agr:MutualContractualAgreement</TD></TR></TABLE>> URL="https://w3id.org/citydata/imported/fibo-fnd-agr/latest/MutualContractualAgreement" margin=0]
+		StructuredValue [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">StructuredValue</TD></TR></TABLE>> URL="../StructuredValue" margin=0]
+	}
+	WarrantyPromise [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">WarrantyPromise</TD></TR></TABLE>> URL="../WarrantyPromise" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	WarrantyPromise -> "fibo-fnd-agr_MutualContractualAgreement" [arrowhead=onormal style=solid]
+	WarrantyPromise -> StructuredValue [arrowhead=onormal style=solid]
+}

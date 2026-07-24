@@ -1,0 +1,9 @@
+# applicableCountry
+
+A country where a particular merchant return policy applies to, for example the two-letter ISO 3166-1 alpha-2 country code.
+
+**Domain**: [MerchantReturnPolicy](../classes/MerchantReturnPolicy.md)
+
+**Range**: [Country](../classes/Country.md), [Text](../classes/Text.md)
+
+**IRI**: `http://schema.org/applicableCountry`

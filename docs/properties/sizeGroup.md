@@ -1,0 +1,9 @@
+# sizeGroup
+
+The size group (also known as "size type") for a product's size. Size groups are common in the fashion industry to define size segments and suggested audiences for wearable products. Multiple values can be combined, for example "men's big and tall", "petite maternity" or "regular".
+
+**Domain**: [SizeSpecification](../classes/SizeSpecification.md)
+
+**Range**: [SizeGroupEnumeration](../classes/SizeGroupEnumeration.md), [Text](../classes/Text.md)
+
+**IRI**: `http://schema.org/sizeGroup`
