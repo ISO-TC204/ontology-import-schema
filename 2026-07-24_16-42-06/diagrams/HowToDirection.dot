@@ -1,0 +1,21 @@
+// Diagram for HowToDirection
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		CreativeWork [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">CreativeWork</TD></TR></TABLE>> URL="../CreativeWork" margin=0]
+		ListItem [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ListItem</TD></TR></TABLE>> URL="../ListItem" margin=0]
+	}
+	HowToDirection [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">HowToDirection</TD></TR></TABLE>> URL="../HowToDirection" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	HowToDirection -> CreativeWork [arrowhead=onormal style=solid]
+	HowToDirection -> ListItem [arrowhead=onormal style=solid]
+}

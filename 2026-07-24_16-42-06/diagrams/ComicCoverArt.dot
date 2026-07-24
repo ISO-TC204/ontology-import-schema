@@ -1,0 +1,21 @@
+// Diagram for ComicCoverArt
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		ComicStory [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ComicStory</TD></TR></TABLE>> URL="../ComicStory" margin=0]
+		CoverArt [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">CoverArt</TD></TR></TABLE>> URL="../CoverArt" margin=0]
+	}
+	ComicCoverArt [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ComicCoverArt</TD></TR></TABLE>> URL="../ComicCoverArt" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	ComicCoverArt -> ComicStory [arrowhead=onormal style=solid]
+	ComicCoverArt -> CoverArt [arrowhead=onormal style=solid]
+}

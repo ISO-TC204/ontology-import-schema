@@ -1,0 +1,23 @@
+// Diagram for ProductGroup
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		"cmns-cls_Classifier" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">cmns-cls:Classifier</TD></TR></TABLE>> URL="https://w3id.org/citydata/imported/cmns-cls/latest/Classifier" margin=0]
+		"cmns-coll_Collection" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">cmns-coll:Collection</TD></TR></TABLE>> URL="https://w3id.org/citydata/imported/cmns-coll/latest/Collection" margin=0]
+		Product [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Product</TD></TR></TABLE>> URL="../Product" margin=0]
+	}
+	ProductGroup [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ProductGroup</TD></TR></TABLE>> URL="../ProductGroup" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	ProductGroup -> "cmns-cls_Classifier" [arrowhead=onormal style=solid]
+	ProductGroup -> "cmns-coll_Collection" [arrowhead=onormal style=solid]
+	ProductGroup -> Product [arrowhead=onormal style=solid]
+}

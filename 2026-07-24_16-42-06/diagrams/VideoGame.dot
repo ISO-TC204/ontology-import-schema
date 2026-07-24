@@ -1,0 +1,21 @@
+// Diagram for VideoGame
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		Game [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Game</TD></TR></TABLE>> URL="../Game" margin=0]
+		SoftwareApplication [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">SoftwareApplication</TD></TR></TABLE>> URL="../SoftwareApplication" margin=0]
+	}
+	VideoGame [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">VideoGame</TD></TR></TABLE>> URL="../VideoGame" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	VideoGame -> Game [arrowhead=onormal style=solid]
+	VideoGame -> SoftwareApplication [arrowhead=onormal style=solid]
+}
