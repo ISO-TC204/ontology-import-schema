@@ -1,0 +1,19 @@
+// Diagram for PodcastSeason
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		CreativeWorkSeason [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">CreativeWorkSeason</TD></TR></TABLE>> URL="../CreativeWorkSeason" margin=0]
+	}
+	PodcastSeason [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">PodcastSeason</TD></TR></TABLE>> URL="../PodcastSeason" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	PodcastSeason -> CreativeWorkSeason [arrowhead=onormal style=solid]
+}

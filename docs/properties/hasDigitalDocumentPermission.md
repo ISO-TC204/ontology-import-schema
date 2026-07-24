@@ -1,0 +1,9 @@
+# hasDigitalDocumentPermission
+
+A permission related to the access to this document (e.g. permission to read or write an electronic document). For a public document, specify a grantee with an Audience with audienceType equal to "public".
+
+**Domain**: [DigitalDocument](../classes/DigitalDocument.md)
+
+**Range**: [DigitalDocumentPermission](../classes/DigitalDocumentPermission.md)
+
+**IRI**: `http://schema.org/hasDigitalDocumentPermission`

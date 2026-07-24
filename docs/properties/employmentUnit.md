@@ -1,0 +1,9 @@
+# employmentUnit
+
+Indicates the department, unit and/or facility where the employee reports and/or in which the job is to be performed.
+
+**Domain**: [JobPosting](../classes/JobPosting.md)
+
+**Range**: [Organization](../classes/Organization.md)
+
+**IRI**: `http://schema.org/employmentUnit`

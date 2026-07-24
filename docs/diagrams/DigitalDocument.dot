@@ -1,0 +1,21 @@
+// Diagram for DigitalDocument
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		CreativeWork [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">CreativeWork</TD></TR></TABLE>> URL="../CreativeWork" margin=0]
+		"fibo-fnd-doc_Document" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">fibo-fnd-doc:Document</TD></TR></TABLE>> URL="https://w3id.org/citydata/imported/fibo-fnd-doc/latest/Document" margin=0]
+	}
+	DigitalDocument [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">DigitalDocument</TD></TR></TABLE>> URL="../DigitalDocument" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	DigitalDocument -> CreativeWork [arrowhead=onormal style=solid]
+	DigitalDocument -> "fibo-fnd-doc_Document" [arrowhead=onormal style=solid]
+}

@@ -1,0 +1,21 @@
+// Diagram for Error
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		InstantaneousEvent [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">InstantaneousEvent</TD></TR></TABLE>> URL="../InstantaneousEvent" margin=0]
+		"sarif-info_Result" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">sarif-info:Result</TD></TR></TABLE>> URL="https://w3id.org/citydata/imported/sarif-info/latest/Result" margin=0]
+	}
+	Error [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Error</TD></TR></TABLE>> URL="../Error" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	Error -> InstantaneousEvent [arrowhead=onormal style=solid]
+	Error -> "sarif-info_Result" [arrowhead=onormal style=solid]
+}

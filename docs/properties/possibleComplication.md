@@ -1,0 +1,9 @@
+# possibleComplication
+
+A possible unexpected and unfavorable evolution of a medical condition. Complications may include worsening of the signs or symptoms of the disease, extension of the condition to other organ systems, etc.
+
+**Domain**: [MedicalCondition](../classes/MedicalCondition.md)
+
+**Range**: [Text](../classes/Text.md)
+
+**IRI**: `http://schema.org/possibleComplication`

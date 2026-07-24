@@ -1,0 +1,9 @@
+# legislationTransposes
+
+Indicates that this legislation (or part of legislation) fulfills the objectives set by another legislation, by passing appropriate implementation measures. Typically, some legislations of European Union's member states or regions transpose European Directives. This indicates a legally binding link between the 2 legislations.
+
+**Domain**: [Legislation](../classes/Legislation.md)
+
+**Range**: [Legislation](../classes/Legislation.md)
+
+**IRI**: `http://schema.org/legislationTransposes`

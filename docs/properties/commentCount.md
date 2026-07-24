@@ -1,0 +1,9 @@
+# commentCount
+
+The number of comments this CreativeWork (e.g. Article, Question or Answer) has received. This is most applicable to works published in Web sites with commenting system; additional comments may exist elsewhere.
+
+**Domain**: [CreativeWork](../classes/CreativeWork.md)
+
+**Range**: [Integer](../classes/Integer.md)
+
+**IRI**: `http://schema.org/commentCount`

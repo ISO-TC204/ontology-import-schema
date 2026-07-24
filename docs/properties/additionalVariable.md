@@ -1,0 +1,9 @@
+# additionalVariable
+
+Any additional component of the exercise prescription that may need to be articulated to the patient. This may include the order of exercises, the number of repetitions of movement, quantitative distance, progressions over time, etc.
+
+**Domain**: [ExercisePlan](../classes/ExercisePlan.md)
+
+**Range**: [Text](../classes/Text.md)
+
+**IRI**: `http://schema.org/additionalVariable`

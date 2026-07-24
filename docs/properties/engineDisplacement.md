@@ -1,0 +1,9 @@
+# engineDisplacement
+
+The volume swept by all of the pistons inside the cylinders of an internal combustion engine in a single movement. \n\nTypical unit code(s): CMQ for cubic centimeter, LTR for liters, INQ for cubic inches\n* Note 1: You can link to information about how the given value has been determined using the [[valueReference]] property.\n* Note 2: You can use [[minValue]] and [[maxValue]] to indicate ranges.
+
+**Domain**: [EngineSpecification](../classes/EngineSpecification.md)
+
+**Range**: [QuantitativeValue](../classes/QuantitativeValue.md)
+
+**IRI**: `http://schema.org/engineDisplacement`

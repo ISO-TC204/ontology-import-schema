@@ -1,0 +1,21 @@
+// Diagram for MedicalCode
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		CategoryCode [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">CategoryCode</TD></TR></TABLE>> URL="../CategoryCode" margin=0]
+		MedicalIntangible [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">MedicalIntangible</TD></TR></TABLE>> URL="../MedicalIntangible" margin=0]
+	}
+	MedicalCode [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">MedicalCode</TD></TR></TABLE>> URL="../MedicalCode" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	MedicalCode -> CategoryCode [arrowhead=onormal style=solid]
+	MedicalCode -> MedicalIntangible [arrowhead=onormal style=solid]
+}

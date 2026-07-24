@@ -1,0 +1,21 @@
+// Diagram for Campground
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		CivicStructure [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">CivicStructure</TD></TR></TABLE>> URL="../CivicStructure" margin=0]
+		LodgingBusiness [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">LodgingBusiness</TD></TR></TABLE>> URL="../LodgingBusiness" margin=0]
+	}
+	Campground [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Campground</TD></TR></TABLE>> URL="../Campground" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	Campground -> CivicStructure [arrowhead=onormal style=solid]
+	Campground -> LodgingBusiness [arrowhead=onormal style=solid]
+}

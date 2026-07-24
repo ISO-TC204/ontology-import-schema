@@ -1,0 +1,21 @@
+// Diagram for Invoice
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		"fibo-fnd-doc_LegalDocument" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">fibo-fnd-doc:LegalDocument</TD></TR></TABLE>> URL="https://w3id.org/citydata/imported/fibo-fnd-doc/latest/LegalDocument" margin=0]
+		Intangible [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Intangible</TD></TR></TABLE>> URL="../Intangible" margin=0]
+	}
+	Invoice [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Invoice</TD></TR></TABLE>> URL="../Invoice" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	Invoice -> "fibo-fnd-doc_LegalDocument" [arrowhead=onormal style=solid]
+	Invoice -> Intangible [arrowhead=onormal style=solid]
+}

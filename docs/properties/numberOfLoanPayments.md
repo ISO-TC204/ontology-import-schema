@@ -1,0 +1,9 @@
+# numberOfLoanPayments
+
+The number of payments contractually required at origination to repay the loan. For monthly paying loans this is the number of months from the contractual first payment date to the maturity date.
+
+**Domain**: [RepaymentSpecification](../classes/RepaymentSpecification.md)
+
+**Range**: [Number](../classes/Number.md)
+
+**IRI**: `http://schema.org/numberOfLoanPayments`

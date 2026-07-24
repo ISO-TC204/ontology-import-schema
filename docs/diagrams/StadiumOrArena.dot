@@ -1,0 +1,21 @@
+// Diagram for StadiumOrArena
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		CivicStructure [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">CivicStructure</TD></TR></TABLE>> URL="../CivicStructure" margin=0]
+		SportsActivityLocation [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">SportsActivityLocation</TD></TR></TABLE>> URL="../SportsActivityLocation" margin=0]
+	}
+	StadiumOrArena [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">StadiumOrArena</TD></TR></TABLE>> URL="../StadiumOrArena" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	StadiumOrArena -> CivicStructure [arrowhead=onormal style=solid]
+	StadiumOrArena -> SportsActivityLocation [arrowhead=onormal style=solid]
+}

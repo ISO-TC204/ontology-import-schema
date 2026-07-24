@@ -1,0 +1,9 @@
+# legislationConsolidates
+
+Indicates another legislation taken into account in this consolidated legislation (which is usually the product of an editorial process that revises the legislation). This property should be used multiple times to refer to both the original version or the previous consolidated version, and to the legislations making the change.
+
+**Domain**: [Legislation](../classes/Legislation.md)
+
+**Range**: [Legislation](../classes/Legislation.md)
+
+**IRI**: `http://schema.org/legislationConsolidates`

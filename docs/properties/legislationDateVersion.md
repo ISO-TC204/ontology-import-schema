@@ -1,0 +1,9 @@
+# legislationDateVersion
+
+The point-in-time at which the provided description of the legislation is valid (e.g.: when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the "National Insurance Contributions Act 2015")
+
+**Domain**: [Legislation](../classes/Legislation.md)
+
+**Range**: [Date](../classes/Date.md)
+
+**IRI**: `http://schema.org/legislationDateVersion`

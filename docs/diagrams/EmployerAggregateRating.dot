@@ -1,0 +1,19 @@
+// Diagram for EmployerAggregateRating
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		AggregateRating [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">AggregateRating</TD></TR></TABLE>> URL="../AggregateRating" margin=0]
+	}
+	EmployerAggregateRating [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">EmployerAggregateRating</TD></TR></TABLE>> URL="../EmployerAggregateRating" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	EmployerAggregateRating -> AggregateRating [arrowhead=onormal style=solid]
+}

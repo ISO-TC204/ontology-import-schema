@@ -1,0 +1,19 @@
+// Diagram for TattooParlor
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		HealthAndBeautyBusiness [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">HealthAndBeautyBusiness</TD></TR></TABLE>> URL="../HealthAndBeautyBusiness" margin=0]
+	}
+	TattooParlor [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">TattooParlor</TD></TR></TABLE>> URL="../TattooParlor" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	TattooParlor -> HealthAndBeautyBusiness [arrowhead=onormal style=solid]
+}

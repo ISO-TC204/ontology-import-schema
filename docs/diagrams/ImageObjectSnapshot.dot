@@ -1,0 +1,19 @@
+// Diagram for ImageObjectSnapshot
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		ImageObject [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ImageObject</TD></TR></TABLE>> URL="../ImageObject" margin=0]
+	}
+	ImageObjectSnapshot [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">ImageObjectSnapshot</TD></TR></TABLE>> URL="../ImageObjectSnapshot" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	ImageObjectSnapshot -> ImageObject [arrowhead=onormal style=solid]
+}

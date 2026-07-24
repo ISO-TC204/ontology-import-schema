@@ -1,0 +1,21 @@
+// Diagram for CreditCard
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		LoanOrCredit [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">LoanOrCredit</TD></TR></TABLE>> URL="../LoanOrCredit" margin=0]
+		PaymentCard [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">PaymentCard</TD></TR></TABLE>> URL="../PaymentCard" margin=0]
+	}
+	CreditCard [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">CreditCard</TD></TR></TABLE>> URL="../CreditCard" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	CreditCard -> LoanOrCredit [arrowhead=onormal style=solid]
+	CreditCard -> PaymentCard [arrowhead=onormal style=solid]
+}

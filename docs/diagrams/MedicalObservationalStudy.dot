@@ -1,0 +1,19 @@
+// Diagram for MedicalObservationalStudy
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		MedicalStudy [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">MedicalStudy</TD></TR></TABLE>> URL="../MedicalStudy" margin=0]
+	}
+	MedicalObservationalStudy [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">MedicalObservationalStudy</TD></TR></TABLE>> URL="../MedicalObservationalStudy" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	MedicalObservationalStudy -> MedicalStudy [arrowhead=onormal style=solid]
+}

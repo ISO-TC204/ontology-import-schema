@@ -1,0 +1,9 @@
+# acceptedAnswer
+
+The answer(s) that has been accepted as best, typically on a Question/Answer site. Sites vary in their selection mechanisms, e.g. drawing on community opinion and/or the view of the Question author.
+
+**Domain**: [Question](../classes/Question.md)
+
+**Range**: [Answer](../classes/Answer.md), [ItemList](../classes/ItemList.md)
+
+**IRI**: `http://schema.org/acceptedAnswer`

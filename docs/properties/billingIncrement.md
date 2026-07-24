@@ -1,0 +1,9 @@
+# billingIncrement
+
+This property specifies the minimal quantity and rounding increment that will be the basis for the billing. The unit of measurement is specified by the unitCode property.
+
+**Domain**: [UnitPriceSpecification](../classes/UnitPriceSpecification.md)
+
+**Range**: [Number](../classes/Number.md)
+
+**IRI**: `http://schema.org/billingIncrement`
